@@ -267,7 +267,8 @@ const styles = StyleSheet.create({
   modalText: {
     fontSize: 20,
     marginBottom: 15,
-    textAlign: "center"
+    textAlign: "center",
+    fontFamily:"Arvo-Regular",
   },
   input: {
     height: 40,

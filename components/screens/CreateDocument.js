@@ -336,7 +336,6 @@ export default class CreateDocument extends React.Component {
                   onChangeText={text => {
                     this.setState({ enteredText: text });
                   }
-
                   }
                 />
             }
@@ -373,7 +372,7 @@ export default class CreateDocument extends React.Component {
         >
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
-              <Text style={styles.modalText}>Enter Name of File !!!!</Text>
+              <Text style={styles.modalText}>Enter Name of File !!!</Text>
               <TextInput
                 style={styles.input}
                 onChangeText={(text) => this.setState({ nameOfFile: text })}
@@ -383,7 +382,7 @@ export default class CreateDocument extends React.Component {
                 this.setState({ modalVisible: false, }, () => this.storeData())}
                                 style={{
                                   flex: 0,
-                                  backgroundColor: 'lightgreen',
+                                  backgroundColor: '#C7A317',
                                   borderRadius: 10,
                                   padding: 15,
                                   marginHorizontal: 20,
@@ -391,13 +390,12 @@ export default class CreateDocument extends React.Component {
                                   width: '50%',
                                   marginBottom: 10
                                 }}>
-                <Text style={{ fontSize: 14 , fontFamily: "Arvo-Regular"}}> DONE </Text>
+                <Text style={{ fontSize: 14 , fontFamily: "Arvo-Regular", color: "white"}}> DONE </Text>
               </TouchableOpacity>
 
             </View>
           </View>
         </Modal>
-
       </View>
     )
   }
@@ -451,4 +449,8 @@ const styles = StyleSheet.create({
     margin: 12,
     borderWidth: 1,
   },
+  modalText: {
+    fontFamily: "Arvo-Regular",
+    fontSize: 20
+  }
 })
